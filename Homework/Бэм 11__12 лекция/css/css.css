@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font: 18px/20px 'Oswald', sans-serif;
+  padding-bottom: 100px;
+}
+
+.content__title {
+  text-align: center;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: 0 60px;
+  border-bottom: 2px solid #97b621;
+  padding: 15px 20px;
+}
+
+.header__logo {
+  margin-left: 10px;
+  height: 115px;
+  width: 100px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+
+
+
+.menu li a:active {
+  color: #97b621;
+}
+
+
+
+#nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav {
+
+  margin-left: auto;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  list-style-type: none;
+  position: relative;
+}
+
+.main-nav>li {
+  border-left: 2px solid #fff;
+}
+
+.main-nav>li:hover>a {
+  color: #97b621;
+  cursor: pointer;
+}
+
+.main-nav>li>a {
+  padding: 15px 8px;
+  display: block;
+  color: #7ea2b3;
+  font-size: 40px;
+  font-family: "Bebas Neue", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+
+  color: #97b621;
+}
+
+.main-nav li a:active {
+  color: #97b621;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 100%;
+  width: 50%;
+  background:rgb(135, 180, 105) ;
+  border: 2px solid #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+  padding-left: 0;
+}
+
+.dropdown>li {
+  border-bottom: 1px solid #fff;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.dropdown>li:last-child {
+  border-bottom: 0;
+}
+
+.dropdown>li>a {
+  display: block;
+  padding: 15px 5px;
+  text-decoration: none;
+  color: #555;
+}
+
+.main-nav>li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Страница */
+
+h2 {
+  color: #7ea2b3;
+  font-size: 40px;
+  letter-spacing: 5px;
+  line-height: 50px;
+  font-family: "Bebas Neue", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  color: #7ea2b3;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #6d6d6d;
+}
+
+.content {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.content__image {
+  width: 50%;
+}
+
+.content__inner {
+  background-color: #f6fcff;
+  height: 300px;
+  box-shadow: -15px 15px 10px rgb(221 230 235);
+}
+
+.content__inner--shadow {
+  box-shadow: 15px 15px 10px rgb(221 230 235);
+}
+
+.f-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content__inner__btn {
+  background-color: #97b621;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  border: #97b621 solid;
+}
+
+.content__wrap {
+  padding-left: 80px;
+  max-width: 440px;
+}
+
+.btn__main {
+  font-size: 16px;
+  line-height: 22px;
+  border: #97b621 2px solid;
+  color: #97b621;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 35px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.btn__main:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 17.3px;
+  border-color: transparent transparent transparent #97b621;
+  display: block;
+  margin-right: 15px;
+}
+
+.collage__btn {
+  background-color: #97b621;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  border: #97b621 solid;
+  text-decoration: none;
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.content__col {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.content__col--top .content__inner,
+.content__col--center .content__inner,
+.content__col--bottom .content__inner {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 60%;
+}
+
+.content__col--center {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.content__col--center .content__inner {
+  left: 0;
+}
+
+.collage__wrap {
+  letter-spacing: -.36em;
+  margin: 0 -20px;
+}
+
+.collage__item {
+  display: inline-block;
+  letter-spacing: normal;
+  width: 25%;
+  vertical-align: top;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.collage__title {
+  font: 24px/30px 'Oswald', sans-serif;
+}
+
+
+

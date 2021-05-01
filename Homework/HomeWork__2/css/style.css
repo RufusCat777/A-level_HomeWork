@@ -1,0 +1,142 @@
+/* Task2 */
+.header {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    height: 70px;
+
+}
+
+.container {
+
+    box-sizing: border-box;
+    margin: 0 20px;
+
+}
+
+h1 {
+
+    color: #fff;
+
+}
+
+
+
+.first figure blockquote p {
+    color: blue;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+
+a[href^='https://'] {
+
+    color: #f00;
+
+}
+
+a[href^='http://'] {
+
+    color: #ff8d00;
+
+}
+
+ul+p {
+
+    font-size: 26px;
+
+}
+
+a[title] {
+
+    border: 1px solid #067b09;
+
+}
+
+/* Task2 /*/
+
+/* Task3 */
+
+.text-box h3:not(:nth-of-type(2)) {
+
+    color: pink;
+
+}
+
+.text-box #greycol {
+
+    color: grey;
+
+}
+
+.text-box div p {
+
+    color: red;
+
+}
+
+.text-box h3[title] {
+
+    color: blue;
+
+}
+
+.text-box h3[title="text"]+p {
+
+    color: green;
+
+}
+
+
+.text-box .yellow {
+
+    color: yellow;
+
+}
+
+/* Task3 /*/
+
+
+footer {
+
+    margin-top: 15px;
+
+}
+
+.footer__menu {
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 70px;
+}
+
+.phone a:hover {
+
+    text-decoration: none;
+    color: red !important;
+}
+
+.mail a:hover {
+
+    text-decoration: none;
+    color: red !important;
+}

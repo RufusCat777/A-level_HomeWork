@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #eb5757, #000000);
+    height: 70px;
+
+}
+
+.page {
+
+    /* display: flex;
+    flex-direction: column; */
+    min-height: 90vh;
+}
+
+
+/* Task__1 */
+
+.main__box {
+
+    margin: 100px 100px;
+}
+
+.main__box div {
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+}
+
+.box_1 {
+
+    background-color: pink;
+    left: 50px;
+    top: 50px;
+
+}
+
+.box_2 {
+
+    background-color: rgb(118, 175, 240);
+    left: 100px;
+    top: 0;
+    z-index: 1;
+}
+
+.box_3 {
+
+    background-color: rgb(141, 246, 164);
+    left: 150px;
+    top: -50px;
+
+}
+
+/* Task__1/ */
+
+/* Task__2 */
+.task_2 {
+
+    margin: 0 100px;
+
+}
+
+h1 {
+
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+}
+
+h2 {
+
+    /* display: inline-block; */
+    position: relative;
+    right: 20px;
+    top: 30px;
+
+}
+
+h3 {
+
+    position: fixed;
+    left: 50px;
+    top: 100px;
+
+}
+
+/* Task__2 /*/
+
+/* Task3 */
+.task_3main {
+
+    margin-left: 27%;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px 10px;
+    background-color: #0d5825;
+
+}
+
+.task_3main blockquote {
+
+    padding-top: 50px;
+    margin: 0 0;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.hold {
+
+    text-align: center;
+    margin: 100px 120px;
+}
+
+.pic-1 {
+
+    transform: rotate(-25deg);
+    left: 100px;
+
+}
+
+.pic-1:hover {
+
+    cursor: pointer;
+    transform: translate(5px, -20px) rotate(-25deg);
+    transition: all .5s ease 0s;
+
+}
+
+.pic-2 {
+
+    transform: rotate(-8deg);
+    z-index: 1;
+    bottom: 10px;
+
+}
+
+.pic-2:hover {
+
+    cursor: pointer;
+    transform: translate(5px, -20px) rotate(-8deg);
+    transition: all .5s ease 0s;
+}
+
+.pic-3 {
+
+    transform: rotate(20deg);
+    z-index: 2;
+    right: 105px;
+
+}
+
+.pic-3:hover {
+
+    cursor: pointer;
+    transform: translate(5px, -20px) rotate(20deg);
+    transition: all .5s ease 0s;
+}
+
+.hold img {
+
+    display: inline-block;
+    position: relative;
+    width: 150px;
+}
+
+/* Task3 /*/
+
+footer {
+    font-size: 25px;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.footer__menu {
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to top, #eb5757, #000000);
+    height: 70px;
+
+}
+
+.phone a {
+
+    color: white;
+    margin: 0 20px;
+    font-size: 25px;
+
+}
+
+.mail a {
+
+    color: white;
+    margin: 0 20px;
+    font-size: 25px;
+
+}
+
+.phone a:hover {
+
+    transition: 2s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #02f516;
+}
+
+.mail a:hover {
+
+    transition: 2s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: gold;
+}

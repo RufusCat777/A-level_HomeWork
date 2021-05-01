@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    font-size: 20px;   
+}
+.header {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    height: 70px;
+
+}
+
+.container {
+
+    box-sizing: border-box;
+    margin: 0 1rem;
+
+}
+
+h1 {
+
+    color: #fff;
+
+}
+.page {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/*---- Task1---- */
+
+.container ul {
+
+    font-size: 1rem;
+}
+
+.container li {
+    list-style: none;
+    
+}
+.container ul li a {
+
+    text-decoration: none;
+
+}
+
+.container ul li :before{
+
+    content: "_";
+
+}
+
+.container ul li:nth-of-type(1) a {
+    color: green;
+}
+
+/* .container ul>li:first-child a {
+
+    color: green;
+} */
+
+.container ul li:nth-child(even) a {
+    
+    font-size: .9rem;
+    
+}
+
+.container ul li:nth-child(3n+1) a {
+
+background: yellow;
+
+}
+
+.container ul li a:hover {
+
+    font-size: 1.5rem;
+    color: rgb(10, 233, 129);
+    cursor: pointer;
+}
+/* -----Task1----- /*/
+
+/* -----Task2----- */
+
+.text-box h3:not(:nth-of-type(2)) {
+
+    color: pink;
+
+}
+
+.text-box #greycol {
+
+    color: grey;
+
+}
+
+.text-box div p {
+
+    color: red;
+
+}
+
+.text-box h3[title] {
+
+    color: blue;
+
+}
+
+.text-box h3[title="text"]+p {
+
+    color: green;
+
+}
+
+
+.text-box .yellow {
+
+    color: yellow;
+
+}
+
+/* -----Task2----- /*/
+
+
+
+
+
+footer {
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.footer__menu {
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 70px;
+}
+
+.phone a:hover {
+
+    transition: .2s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: red !important;
+}
+
+.mail a:hover {
+
+    transition: .2s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: red !important;
+}
