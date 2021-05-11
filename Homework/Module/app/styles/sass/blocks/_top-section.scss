@@ -1,0 +1,51 @@
+.top-section {
+    margin-bottom: 250px;
+    @media (max-width: $tablet) {
+        margin-bottom: 80px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 60px;
+        margin: 0 0 16px;
+        font-weight: 700;
+        @media (max-width: $mobile) {
+            font-size: 36px;
+        }
+        span {
+            display: block;
+            font-size: 52px;
+            font-weight: 400;
+            @media (max-width: $mobile) {
+                font-size: 30px;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        margin: 0 auto 56px;
+        width: 220px;
+        height: 54px;
+        line-height: 54px;
+        border-radius: 30px;
+        background: #ff4053;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid #ff4053;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        &:hover {
+            background: #fff;
+            color: #ff4053;
+        }
+    }
+    &__description {
+        display: block;
+        margin: 0 auto;
+        max-width: 725px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+}
